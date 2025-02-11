@@ -15,9 +15,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/linkedin")
 public class LinkedInSearchController {
-    @Autowired
     private ISearchService searchService;
-
+    @Autowired
     public LinkedInSearchController(ISearchService searchService) {
         this.searchService = searchService;
     }
